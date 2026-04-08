@@ -17,7 +17,7 @@ const Login = () => {
       return;
     }
 
-    const res = await fetch('http://localhost:5000/login', {
+    const res = await fetch('https://typewriter-backend-gh7j.onrender.com/login', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({username, password}),
